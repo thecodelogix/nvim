@@ -1,6 +1,6 @@
 function ColorMyPencils(color)
   -- set colorscheme
-  color = color or "habamax"
+  color = color or "codedark"
   vim.cmd.colorscheme(color)
 
   -- transparent background

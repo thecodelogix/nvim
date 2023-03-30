@@ -41,14 +41,26 @@ return require('packer').startup(function(use)
         palette_overrides = {},
         overrides = {},
         dim_inactive = false,
-        transparent_mode = false,
+        transparent_mode = true,
       })
     end
   })
 
   use 'folke/tokyonight.nvim'
 
-  use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+  use ({
+    'projekt0n/github-nvim-theme', tag = 'v0.0.7',
+    config = function()
+      require('github-theme').setup({
+        theme_style = 'dark',
+        sidebars = { 'qf', 'vista_kind', 'terminal', 'packer', 'telescope' },
+        dark_sidebar = true,
+        dark_float = true,
+        comment_style = 'italic',
+        transparent = false
+      })
+    end
+  })
   -- use('vv9k/vim-github-dark')
 
   use({
