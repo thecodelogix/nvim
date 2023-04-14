@@ -109,48 +109,20 @@ _G.packer_plugins = {
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
-  ["darcula-solid.nvim"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/darcula-solid.nvim",
-    url = "https://github.com/briones-gabriel/darcula-solid.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
-  },
-  ["github-nvim-theme"] = {
-    config = { "\27LJ\2\nÀ\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\rsidebars\1\6\0\0\aqf\15vista_kind\rterminal\vpacker\14telescope\1\0\5\18comment_style\vitalic\16transparent\1\16theme_style\tdark\15dark_float\2\17dark_sidebar\2\nsetup\17github-theme\frequire\0" },
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
-  },
-  ["gruvbox.nvim"] = {
-    config = { "\27LJ\2\n√\2\0\0\4\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0024\3\0\0=\3\6\0024\3\0\0=\3\a\2B\0\2\1K\0\1\0\14overrides\22palette_overrides\vitalic\1\0\4\nfolds\2\14operators\1\rcomments\2\fstrings\2\1\0\f\tbold\1\14underline\2\14undercurl\2\rcontrast\5\finverse\2\25invert_intend_guides\1\19invert_tabline\1\17invert_signs\1\21invert_selection\1\18strikethrough\2\17dim_inactive\1\21transparent_mode\2\nsetup\fgruvbox\frequire\0" },
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   harpoon = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-  ["jellybeans.vim"] = {
-    config = { "\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0" },
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/jellybeans.vim",
-    url = "https://github.com/nanotech/jellybeans.vim"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
-  },
-  ["lush.nvim"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/lush.nvim",
-    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -161,6 +133,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  nvim = {
+    config = { "\27LJ\2\n¡\1\0\0\4\0\t\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\0016\0\6\0009\0\a\0'\2\b\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\17dim_inactive\1\0\1\fenabled\1\1\0\3\27transparent_background\2\vflavor\nmocha\16term_colors\1\nsetup\15catppuccin\frequire\0" },
+    loaded = true,
+    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/nvim",
+    url = "https://github.com/catppuccin/nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -192,12 +170,6 @@ _G.packer_plugins = {
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14rose-pine\frequire\0" },
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   tComment = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/tComment",
@@ -207,11 +179,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
     loaded = true,
@@ -227,17 +194,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-bundler",
     url = "https://github.com/tpope/vim-bundler"
-  },
-  ["vim-code-dark"] = {
-    config = { "\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0" },
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-code-dark",
-    url = "https://github.com/tomasiser/vim-code-dark"
-  },
-  ["vim-dim"] = {
-    loaded = true,
-    path = "/Users/developercasts/.local/share/nvim/site/pack/packer/start/vim-dim",
-    url = "https://github.com/jeffkreeftmeijer/vim-dim"
   },
   ["vim-endwise"] = {
     loaded = true,
@@ -338,30 +294,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
--- Config for: vim-code-dark
-time([[Config for vim-code-dark]], true)
-try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "vim-code-dark")
-time([[Config for vim-code-dark]], false)
 -- Config for: zen-mode.nvim
 time([[Config for zen-mode.nvim]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
 time([[Config for zen-mode.nvim]], false)
--- Config for: jellybeans.vim
-time([[Config for jellybeans.vim]], true)
-try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "jellybeans.vim")
-time([[Config for jellybeans.vim]], false)
--- Config for: gruvbox.nvim
-time([[Config for gruvbox.nvim]], true)
-try_loadstring("\27LJ\2\n√\2\0\0\4\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0024\3\0\0=\3\6\0024\3\0\0=\3\a\2B\0\2\1K\0\1\0\14overrides\22palette_overrides\vitalic\1\0\4\nfolds\2\14operators\1\rcomments\2\fstrings\2\1\0\f\tbold\1\14underline\2\14undercurl\2\rcontrast\5\finverse\2\25invert_intend_guides\1\19invert_tabline\1\17invert_signs\1\21invert_selection\1\18strikethrough\2\17dim_inactive\1\21transparent_mode\2\nsetup\fgruvbox\frequire\0", "config", "gruvbox.nvim")
-time([[Config for gruvbox.nvim]], false)
--- Config for: github-nvim-theme
-time([[Config for github-nvim-theme]], true)
-try_loadstring("\27LJ\2\nÀ\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\rsidebars\1\6\0\0\aqf\15vista_kind\rterminal\vpacker\14telescope\1\0\5\18comment_style\vitalic\16transparent\1\16theme_style\tdark\15dark_float\2\17dark_sidebar\2\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
-time([[Config for github-nvim-theme]], false)
+-- Config for: nvim
+time([[Config for nvim]], true)
+try_loadstring("\27LJ\2\n¡\1\0\0\4\0\t\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\0016\0\6\0009\0\a\0'\2\b\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\17dim_inactive\1\0\1\fenabled\1\1\0\3\27transparent_background\2\vflavor\nmocha\16term_colors\1\nsetup\15catppuccin\frequire\0", "config", "nvim")
+time([[Config for nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

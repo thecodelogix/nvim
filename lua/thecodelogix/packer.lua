@@ -9,73 +9,17 @@ return require('packer').startup(function(use)
 
   -- Colorscheme
   use({
-    'nanotech/jellybeans.vim',
+    'catppuccin/nvim',
     config = function()
-      -- vim.cmd('colorscheme jellybeans')
-    end
-  })
-  use('jeffkreeftmeijer/vim-dim')
-  use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
-  use({
-    "ellisonleao/gruvbox.nvim",
-    config = function()
-      -- setup must be called before loading the colorscheme
-      -- Default options:
-      require("gruvbox").setup({
-        undercurl = true,
-        underline = true,
-        bold = false,
-        italic = {
-          strings = true,
-          comments = true,
-          operators = false,
-          folds = true,
-        },
-        strikethrough = true,
-        invert_selection = false,
-        invert_signs = false,
-        invert_tabline = false,
-        invert_intend_guides = false,
-        inverse = true, -- invert background for search, diffs, statuslines and errors
-        contrast = "", -- can be "hard", "soft" or empty string
-        palette_overrides = {},
-        overrides = {},
-        dim_inactive = false,
-        transparent_mode = true,
+      require('catppuccin').setup({
+        flavor = 'mocha',
+        transparent_background = true,
+        term_colors = false,
+        dim_inactive = {
+          enabled = false
+        }
       })
-    end
-  })
-
-  use 'folke/tokyonight.nvim'
-
-  use ({
-    'projekt0n/github-nvim-theme', tag = 'v0.0.7',
-    config = function()
-      require('github-theme').setup({
-        theme_style = 'dark',
-        sidebars = { 'qf', 'vista_kind', 'terminal', 'packer', 'telescope' },
-        dark_sidebar = true,
-        dark_float = true,
-        comment_style = 'italic',
-        transparent = false
-      })
-    end
-  })
-  -- use('vv9k/vim-github-dark')
-
-  use({
-    'tomasiser/vim-code-dark',
-    config = function()
-      -- vim.cmd('colorscheme codedark')
-    end
-  })
-
-  use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
-    config = function()
-      require("rose-pine").setup()
-      --vim.cmd('colorscheme rose-pine')
+      vim.cmd('colorscheme catppuccin')
     end
   })
 
@@ -157,6 +101,74 @@ use {
 end)
 
 
+
+  -- use({
+  --   'nanotech/jellybeans.vim',
+  --   config = function()
+  --     -- vim.cmd('colorscheme jellybeans')
+  --   end
+  -- })
+  -- use('jeffkreeftmeijer/vim-dim')
+  -- use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
+  -- use({
+  --   "ellisonleao/gruvbox.nvim",
+  --   config = function()
+  --     -- setup must be called before loading the colorscheme
+  --     -- Default options:
+  --     require("gruvbox").setup({
+  --       undercurl = true,
+  --       underline = true,
+  --       bold = false,
+  --       italic = {
+  --         strings = true,
+  --         comments = true,
+  --         operators = false,
+  --         folds = true,
+  --       },
+  --       strikethrough = true,
+  --       invert_selection = false,
+  --       invert_signs = false,
+  --       invert_tabline = false,
+  --       invert_intend_guides = false,
+  --       inverse = true, -- invert background for search, diffs, statuslines and errors
+  --       contrast = "", -- can be "hard", "soft" or empty string
+  --       palette_overrides = {},
+  --       overrides = {},
+  --       dim_inactive = false,
+  --       transparent_mode = true,
+  --     })
+  --   end
+  -- })
+  -- use ({
+  --   'projekt0n/github-nvim-theme', tag = 'v0.0.7',
+  --   config = function()
+  --     require('github-theme').setup({
+  --       theme_style = 'dark',
+  --       sidebars = { 'qf', 'vista_kind', 'terminal', 'packer', 'telescope' },
+  --       dark_sidebar = true,
+  --       dark_float = true,
+  --       comment_style = 'italic',
+  --       transparent = false
+  --     })
+  --   end
+  -- })
+  -- -- use('vv9k/vim-github-dark')
+  --
+  -- use({
+  --   'tomasiser/vim-code-dark',
+  --   config = function()
+  --     -- vim.cmd('colorscheme codedark')
+  --   end
+  -- })
+  --
+  -- use({
+  --   'rose-pine/neovim',
+  --   as = 'rose-pine',
+  --   config = function()
+  --     require("rose-pine").setup()
+  --     --vim.cmd('colorscheme rose-pine')
+  --   end
+  -- })
 
   -- use({
   --   'rose-pine/neovim',
