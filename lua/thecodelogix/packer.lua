@@ -8,20 +8,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Colorscheme
-  use({
-    'catppuccin/nvim',
-    config = function()
-      require('catppuccin').setup({
-        flavor = 'mocha',
-        transparent_background = true,
-        term_colors = false,
-        dim_inactive = {
-          enabled = false
-        }
-      })
-      vim.cmd('colorscheme catppuccin')
-    end
-  })
+  vim.cmd('colorscheme habamax')
 
   -- Fuzzy Finder
   use {
